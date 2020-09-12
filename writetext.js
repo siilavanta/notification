@@ -1,1 +1,1 @@
-alert('hi i am WriteText App')
+alert('Welcome to WriteText App')
