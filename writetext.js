@@ -1,1 +1,1 @@
-alert('Welcome to WriteText App.')
+//alert('Welcome to WriteText App.')
