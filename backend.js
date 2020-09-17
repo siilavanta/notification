@@ -37,7 +37,7 @@ var request = new XMLHttpRequest();
             var data = request.responseText
             
             var fulluser = indexName[i].concat(data.length);
-            console.log(fulluser
+            console.log(fulluser)
            
 
             loop(i + 1, length);
