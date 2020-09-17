@@ -38,10 +38,14 @@ var request = new XMLHttpRequest();
             
             var fulluser = indexName[i].concat(data.length);
             console.log(fulluser)
-           
 
             loop(i + 1, length);
         }
     }
     request.send();
 })(0, index.length);
+
+
+
+
+
