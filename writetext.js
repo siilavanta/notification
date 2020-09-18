@@ -9,7 +9,7 @@ var vedio = `   <div id="frame_id">
 
 <iframe 
 width="100%" 
-style="height: 100vh;" 
+style="height: 85vh;" 
 src="https://www.youtube.com/embed/j6glx7ZypAs" 
 frameborder="0" allow="accelerometer; autoplay; 
 encrypted-media; gyroscope; picture-in-picture" 
