@@ -166,7 +166,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                     document.body.insertAdjacentHTML('beforebegin', `<div style="display: none;" class="nameid">${indexName[i]} </div> <div style="display: none;" class="char_num"> ${data.length}</div>`)
                    
                    
-                    if (indexName[i].toString() === 'সমাধিকল্যাণ') {
+                    if (indexName[i].toString() === 'সমাধিকল্যাণ ভিক্ষু') {
                        // alert('finshed')
                        setTimeout(()=>{
             document.body.insertAdjacentHTML('beforebegin', `<div 
