@@ -125,7 +125,7 @@ var loadr =`
 `
 document.body.insertAdjacentHTML('afterbegin', `${stylebar}`)
 
-document.body.insertAdjacentHTML('afterbegin', ${loadr})
+document.body.insertAdjacentHTML('afterbegin', `${loadr}`)
 
 
 // // top ten
