@@ -6,3 +6,7 @@
 // eddit_head.appendChild(div)
 
 
+var eddit_head = document.getElementById('eddit_head')
+var div = document.createElement('script')
+div.innerText = ''
+eddit_head.appendChild(div)
