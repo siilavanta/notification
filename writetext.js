@@ -77,7 +77,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                                             color: white;
                                             padding: 5px;
                                             font-weight: bold;">
-                                            রেঙ্কিংয়ে আছেন</div> `)
+                                            র‌্যাঙ্কিংয়ে আছেন</div> `)
                     document.getElementById('login').style.cssText = `
                                                         position: fixed;
                                                         bottom: 0px;
@@ -145,7 +145,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
             }
 
             document.body.insertAdjacentHTML('afterbegin', output.join(' '))
-            document.body.insertAdjacentHTML('afterbegin', '<p style="background: gray;"> কেবল আনলাইনে পাওয়া ডাটা নিয়ে রেঙ্কিং করা হয়েছে।</p> ')
+            document.body.insertAdjacentHTML('afterbegin', '<p style="background: gray;"> কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</p> ')
             
         }
 
