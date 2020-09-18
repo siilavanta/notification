@@ -27,9 +27,7 @@ var divel = document.createElement('div')
 // আপনাদের টাইপের সবিধার্থে “|” ভার্টিকেল এবং “$” ডলার চিহ্ন ব্যবহার না করার সিদ্ধান্ত নেওয়া হয়েছে। 
 // এখন থেকে নতুন কোন শব্দ টাইপ করলে এই সিদ্ধান্তটি ফলো করার সকলকে প্রার্থনা বা অনুরোধ করা হচ্ছে। 
 // তবে আগে যে শব্দগুলো যেভাবে লেখা হয়েছে সেভাবে থাকুক সেগুলো পরিবর্তন করার প্রয়োজন নেই। </div>`)
-
-
-
+// // top ten
 var shraddhamitra = ''
 var silavanta = 'https://raw.githubusercontent.com/siilavanta/vol_1/master/%E0%A6%97.txt'
 var sarbananda = 'https://raw.githubusercontent.com/SarbaNandaOfficial/Pali-to-Bengali-Dictionary/master/%E0%A6%85.txt'
@@ -46,7 +44,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
     function rang() {
         var index = [silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, samadhikalyan];
-        var indexName = [['সীলৰন্ত'], ['সর্বানন্দ'], ['শুভনন্দ'], ['অনুজ্ঞানন্দ'], ['শীলজ্যোতি'], ['সাধনাজ্যোতি'], ['অভিজ্ঞানন্দ'], ['মেগীয়'], ['মিটন'], ['সমাধিকল্যাণ']];
+        var indexName = [['সীলৰন্ত'], ['সর্বানন্দ'], ['শুভনন্দ'], ['অনুজ্ঞানন্দ'], ['শীলজ্যোতি'], ['সাধনাজ্য়োতি'], ['অভিজ্ঞানন্দ'], ['মেগীয়'], ['মিটন'], ['সমাধিকল্যাণ']];
 
         var request = new XMLHttpRequest();
         (function loop(i, length) {
@@ -76,7 +74,18 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                                             color: white;
                                             padding: 5px;
                                             font-weight: bold;">
-                                            রেঙ্কিংয়ে আছেন</div>`)
+                                            রেঙ্কিংয়ে আছেন</div> `)
+                    document.getElementById('login').style.cssText = `
+                                                        position: fixed;
+                                                        bottom: 0px;
+                                                        width: 100%;
+                                                        justify-content: center;
+                                                        background: darksalmon;
+                                                        padding-top: 0%;
+                                                        display: flex;
+                                                        flex-direction: row;
+
+                                                        `
 
                         topTen();
                        }, 300)
@@ -93,7 +102,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
         ///https://stackoverflow.com/questions/46503558/how-to-use-multiple-xmlhttprequest/46503763
     }
-    rang()
+      rang()
 
     const topTen = () => {
 
