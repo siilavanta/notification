@@ -168,6 +168,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                    
                     if (indexName[i].toString() === 'সমাধিকল্যাণ ভিক্ষু') {
                        // alert('finshed')
+
                        setTimeout(()=>{
             document.body.insertAdjacentHTML('beforebegin', `<div 
                                             style="text-align: center; 
