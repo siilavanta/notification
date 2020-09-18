@@ -1,4 +1,8 @@
-   var themetxt = `
+function sssss(){
+    
+
+
+var themetxt = `
             <div style="    display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -72,3 +76,5 @@
             nighttheme()
         }
     }, 500)
+}
+   
