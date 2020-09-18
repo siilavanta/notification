@@ -29,6 +29,105 @@ var divel = document.createElement('div')
 // আপনাদের টাইপের সবিধার্থে “|” ভার্টিকেল এবং “$” ডলার চিহ্ন ব্যবহার না করার সিদ্ধান্ত নেওয়া হয়েছে। 
 // এখন থেকে নতুন কোন শব্দ টাইপ করলে এই সিদ্ধান্তটি ফলো করার সকলকে প্রার্থনা বা অনুরোধ করা হচ্ছে। 
 // তবে আগে যে শব্দগুলো যেভাবে লেখা হয়েছে সেভাবে থাকুক সেগুলো পরিবর্তন করার প্রয়োজন নেই। </div>`)
+
+var stylebar = `
+
+  #loadermain{
+    justify-content: center;
+    top: 0px;
+    /* background: white; */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    z-index: 4000;
+    display: none;
+    }
+
+  #loader {
+   
+    top: 50px;
+    align-self: center;
+    z-index: 100; 
+    width: 40px;
+    height: 40px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid rgb(101 238 244);
+    border-right: 5px solid rgb(101 238 244);
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 0.5s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+
+  @-webkit-keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0
+    }
+
+    to {
+      bottom: 0px;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0
+    }
+
+    to {
+      bottom: 0;
+      opacity: 1
+    }
+  }
+
+
+`
+
+var loadr =`
+<div id="loadermain">
+      <div id="loader"></div>
+    </div>
+
+`
+document.insertAdjacentHTML('afterbegin', stylebar)
+
+document.insertAdjacentHTML('afterbegin', loadr)
+
+
 // // top ten
 var shraddhamitra = ''
 var silavanta = 'https://raw.githubusercontent.com/siilavanta/vol_1/master/%E0%A6%97.txt'
@@ -46,6 +145,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
 
     function rang() {
+          document.getElementById('loadermain').style.display = "flex"
         var index = [silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, samadhikalyan];
         var indexName = [['সীলৰন্ত'], ['সর্বানন্দ'], ['শুভনন্দ'], ['অনুজ্ঞানন্দ'], ['শীলজ্যোতি'], ['সাধনাজ্যোতি'], ['অভিজ্ঞানন্দ'], ['মেগীয়'], ['মিটন'], ['দেবসেন'], ['সমাধিকল্যাণ']];
 
@@ -143,7 +243,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                         
                     </div>`)
             }
-
+            document.getElementById('loadermain').style.display = "none"
             document.body.insertAdjacentHTML('afterbegin', output.join(' '))
             document.body.insertAdjacentHTML('afterbegin', '<p style="background: gray;"> কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</p> ')
             
