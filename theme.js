@@ -1,4 +1,4 @@
-function sssss(){
+function load(){
     
 
 
@@ -78,4 +78,5 @@ var themetxt = `
     }, 500)
     console.log('ooooo')
 }
+load()
    
