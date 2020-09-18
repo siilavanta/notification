@@ -246,7 +246,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
             }
             document.getElementById('loadermain').style.display = "none"
             document.body.insertAdjacentHTML('afterbegin', output.join(' '))
-            document.body.insertAdjacentHTML('afterbegin', '<p style="background: gray; padding: 2px 6px; font-size:12px; margin: 0px 0px 10px 0px; text-align: center;"><i>কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</i></p> ')
+            document.body.insertAdjacentHTML('afterbegin', '<p style="color: white; background: gray; padding: 2px 6px; font-size:12px; margin: 0px 0px 10px 0px; text-align: center;"><i>কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</i></p> ')
             
         }
 
