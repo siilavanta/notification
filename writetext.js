@@ -36,7 +36,7 @@ var stylebar = `
     justify-content: center;
     top: 0px;
     /* background: white; */
-    height: 100vh;
+    height: 20vh;
     width: 100vw;
     position: fixed;
     opacity: 0.9;
