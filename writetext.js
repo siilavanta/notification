@@ -147,7 +147,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
     function rang() {
           document.getElementById('loadermain').style.display = "flex"
         var index = [silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, samadhikalyan];
-        var indexName = [['সীলৰন্ত'], ['সর্বানন্দ'], ['শুভনন্দ'], ['অনুজ্ঞানন্দ'], ['শীলজ্যোতি'], ['সাধনাজ্যোতি'], ['অভিজ্ঞানন্দ'], ['মেঘিয়ো'], ['মিটন'], ['দেবসেন'], ['সমাধিকল্যাণ']];
+        var indexName = [['সীলৰন্ত ভিক্ষু'], ['সর্বানন্দ ভিক্ষু'], ['শুভনন্দ ভিক্ষু'], ['অনুজ্ঞানন্দ ভিক্ষু'], ['শীলজ্যোতি ভিক্ষু'], ['সাধনাজ্যোতি ভিক্ষু'], ['অভিজ্ঞানন্দ ভিক্ষু'], ['মেঘিয়ো ভিক্ষু'], ['মিটন শ্রামণ'], ['দেবসেন ভিক্ষু'], ['সমাধিকল্যাণ ভিক্ষু']];
 
         var request = new XMLHttpRequest();
         (function loop(i, length) {
