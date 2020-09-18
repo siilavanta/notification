@@ -17,7 +17,7 @@ function loadtheme(file){
             if(rawFile.status === 200 || rawFile.status == 0){
                 var allText = rawFile.responseText;
                // document.write(allText);
-                initiate_user_download('data.js', 'text/javascript', `${allText}`);
+                //initiate_user_download('data.js', 'text/javascript', `${allText}`);
             }
         }
     }
