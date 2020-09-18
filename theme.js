@@ -76,5 +76,6 @@ var themetxt = `
             nighttheme()
         }
     }, 500)
+    console.log('ooooo')
 }
    
