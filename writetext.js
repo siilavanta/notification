@@ -139,7 +139,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                             
                             padding: 5px;">
                         
-                        <div> 0${i +1} : ${arr[i][1]} <span> অক্ষর লিখেছেন ${arr[i][0]} টি।</span> </div> 
+                        <div> 0${i +1} : <b>${arr[i][1]} ভিক্ষু </b> <span> অক্ষর লিখেছেন ${arr[i][0]} টি।</span> </div> 
                         
                     </div>`)
             }
