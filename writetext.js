@@ -31,7 +31,7 @@ var divel = document.createElement('div')
 // তবে আগে যে শব্দগুলো যেভাবে লেখা হয়েছে সেভাবে থাকুক সেগুলো পরিবর্তন করার প্রয়োজন নেই। </div>`)
 
 var stylebar = `
-
+<style>
   #loadermain{
     justify-content: center;
     top: 0px;
@@ -114,7 +114,7 @@ var stylebar = `
     }
   }
 
-
+</style>
 `
 
 var loadr =`
