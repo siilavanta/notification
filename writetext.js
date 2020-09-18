@@ -145,6 +145,6 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
             }
 
             document.body.insertAdjacentHTML('afterbegin', output.join(' '))
-            document.body.insertAdjacentHTML('afterbegin', '<p><b> বিঃদ্রঃ</b></p> ')
+            document.body.insertAdjacentHTML('afterbegin', '<p><b> বিঃদ্রঃ</b>আনলাইনে জমানো ডাটা দিয়ে রেঙ্কিং করা হয়েছে </p> ')
             
         }
