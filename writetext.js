@@ -1,10 +1,11 @@
+
 // var eddit_head = document.getElementById('eddit_head')
 // var div = document.createElement('span')
 // div.setAttribute('onclick', `addValue('text'), autoFocus()`)
 // div.setAttribute('class', 'eddit_head_item')
 // div.innerText = 'text'
 // eddit_head.appendChild(div)
-    var vedio = `   <div id="frame_id">
+var vedio = `   <div id="frame_id">
 
 <iframe 
 width="100%" 
@@ -13,6 +14,7 @@ src="https://www.youtube.com/embed/j6glx7ZypAs"
 frameborder="0" allow="accelerometer; autoplay; 
 encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>`
 
 var divel = document.createElement('div')
@@ -39,12 +41,13 @@ var meghiya_1 = 'https://raw.githubusercontent.com/MeghiyaBhante/vol_1/master/%E
 var meghiya = 'https://raw.githubusercontent.com/MeghiyaBhante/vol_1/master/%E0%A6%8A.txt'
 var abhijnananda = 'https://raw.githubusercontent.com/AbhijnanandaBhante/vol_1/master/%E0%A6%86.txt'
 var miton = 'https://raw.githubusercontent.com/MitonShramon/vol_1/master/%E0%A6%8F.txt'
+var devasen = 'https://raw.githubusercontent.com/AnugganandaBhante/vol_1/master/%E0%A6%95.txt'
 var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1/master/%E0%A6%A8.txt'
 
 
     function rang() {
-        var index = [silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, samadhikalyan];
-        var indexName = [['সীলৰন্ত'], ['সর্বানন্দ'], ['শুভনন্দ'], ['অনুজ্ঞানন্দ'], ['শীলজ্যোতি'], ['সাধনাজ্য়োতি'], ['অভিজ্ঞানন্দ'], ['মেগীয়'], ['মিটন'], ['সমাধিকল্যাণ']];
+        var index = [silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, samadhikalyan];
+        var indexName = [['সীলৰন্ত'], ['সর্বানন্দ'], ['শুভনন্দ'], ['অনুজ্ঞানন্দ'], ['শীলজ্যোতি'], ['সাধনাজ্যোতি'], ['অভিজ্ঞানন্দ'], ['মেগীয়'], ['মিটন'], ['দেবসেন'], ['সমাধিকল্যাণ']];
 
         var request = new XMLHttpRequest();
         (function loop(i, length) {
@@ -144,5 +147,3 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
             document.body.insertAdjacentHTML('afterbegin', output.join(' '))
             
         }
-
-
