@@ -129,7 +129,7 @@ document.body.insertAdjacentHTML('afterbegin', `${loadr}`)
 
 
 // // top ten
-var shraddhamitra = ''
+var shraddhamitra = 'https://raw.githubusercontent.com/ShraddhamitraBhante/vol_1/master/%E0%A6%96.txt'
 var silavanta = 'https://raw.githubusercontent.com/siilavanta/vol_1/master/%E0%A6%97.txt'
 var sarbananda = 'https://raw.githubusercontent.com/SarbaNandaOfficial/Pali-to-Bengali-Dictionary/master/%E0%A6%85.txt'
 var shuvaananda = 'https://raw.githubusercontent.com/ShuvanandaBhante/vol_1/master/%E0%A6%87.txt'
@@ -146,8 +146,8 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
     function rang() {
           document.getElementById('loadermain').style.display = "flex"
-        var index = [silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, samadhikalyan];
-        var indexName = [['সীলৰন্ত ভিক্ষু'], ['সর্বানন্দ ভিক্ষু'], ['শুভনন্দ ভিক্ষু'], ['অনুজ্ঞানন্দ ভিক্ষু'], ['শীলজ্যোতি ভিক্ষু'], ['সাধনাজ্যোতি ভিক্ষু'], ['অভিজ্ঞানন্দ ভিক্ষু'], ['মেঘিয়ো ভিক্ষু'], ['মিটন শ্রামণ'], ['দেবসেন ভিক্ষু'], ['সমাধিকল্যাণ ভিক্ষু']];
+        var index = [shraddhamitra, silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, samadhikalyan];
+        var indexName = [['শ্রদ্ধামিত্র ভিক্ষু'], ['সীলৰন্ত ভিক্ষু'], ['সর্বানন্দ ভিক্ষু'], ['শুভনন্দ ভিক্ষু'], ['অনুজ্ঞানন্দ ভিক্ষু'], ['শীলজ্যোতি ভিক্ষু'], ['সাধনাজ্যোতি ভিক্ষু'], ['অভিজ্ঞানন্দ ভিক্ষু'], ['মেঘিয়ো ভিক্ষু'], ['মিটন শ্রামণ'], ['দেবসেন ভিক্ষু'], ['সমাধিকল্যাণ ভিক্ষু']];
 
         var request = new XMLHttpRequest();
         (function loop(i, length) {
