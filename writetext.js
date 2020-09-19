@@ -115,13 +115,16 @@ var stylebar = `
   }
 
 #loginpage{
-    bottom: auto;
+   
     width: 40px;
     height: 40px;
     position: fixed;
     background: #007bff;
     border-radius: 200%;
     right: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 </style>
