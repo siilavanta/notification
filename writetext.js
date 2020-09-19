@@ -143,7 +143,7 @@ document.body.insertAdjacentHTML('afterbegin', `${stylebar}`)
 
 document.body.insertAdjacentHTML('afterbegin', `${loadr}`)
 var logiPage = document.getElementById('loginpage')
-var cmbtn = `<a id="mcbtn" href="https://github.com/PaliBanglaDictionary/vol_1/issues/1"><i class="material-icons">comment</i></a>`
+var cmbtn = `<a id="mcbtn" href="https://github.com/PaliBanglaDictionary/vol_1/issues/"><i class="material-icons">comment</i></a>`
 logiPage.innerHTML = cmbtn
 
 // // top ten
