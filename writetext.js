@@ -126,6 +126,9 @@ var stylebar = `
     display: flex;
     justify-content: center;
 }
+#mcbtn{
+align-self: center;
+}
 
 </style>
 `
@@ -140,7 +143,7 @@ document.body.insertAdjacentHTML('afterbegin', `${stylebar}`)
 
 document.body.insertAdjacentHTML('afterbegin', `${loadr}`)
 var logiPage = document.getElementById('loginpage')
-var cmbtn = `<a href="https://github.com/PaliBanglaDictionary/vol_1/issues/1"><i class="material-icons">comment</i></a>`
+var cmbtn = `<a id="mcbtn" href="https://github.com/PaliBanglaDictionary/vol_1/issues/1"><i class="material-icons">comment</i></a>`
 logiPage.innerHTML = cmbtn
 
 // // top ten
@@ -253,7 +256,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                             font-family: Adorsholipi;
                             
                             
-                            padding: 5px;">
+                            padding: 3px;">
                         
                         <div> ${i +1} : <b>${arr[i][1]} </b> <span> লিখেছেন ${arr[i][0]} অক্ষর টি।</span> </div> 
                         
