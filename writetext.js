@@ -114,6 +114,16 @@ var stylebar = `
     }
   }
 
+#loginpage{
+    bottom: auto;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background: #007bff;
+    border-radius: 200%;
+    right: 0px;
+}
+
 </style>
 `
 
@@ -126,7 +136,9 @@ var loadr =`
 document.body.insertAdjacentHTML('afterbegin', `${stylebar}`)
 
 document.body.insertAdjacentHTML('afterbegin', `${loadr}`)
-
+var logiPage = document.getElementById('loginpage')
+var cmbtn = `<a href="https://github.com/PaliBanglaDictionary/vol_1/issues/1"><i class="material-icons">comment</i></a>`
+logiPage.innerHTML = cmbtn
 
 // // top ten
 var shraddhamitra = 'https://raw.githubusercontent.com/ShraddhamitraBhante/vol_1/master/%E0%A6%96.txt'
