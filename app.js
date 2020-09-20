@@ -85,12 +85,12 @@ var themetxt = `
 
     if (att === isNormal) {
      console.log('nowrap')
-        txtarea.setAttribute('style', `white-space: normal; padding: 15px 4% 10% 4%;`)
+        txtarea.setAttribute('style', `white-space: normal; padding: 15px 10% 10% 10%;`)
     }else if(att === isWrap){
         console.log('Wrap')
-        txtarea.setAttribute('style', `white-space: nowrap; padding: 15px 4% 10% 4%;`)
+        txtarea.setAttribute('style', `white-space: nowrap; padding: 15px 10% 10% 10%;`)
     }
     else if(att === isWrap && isDay){
         console.log('isDay')
-        txtarea.setAttribute('style', `white-space: nowrap; padding: 15px 4% 10% 4%;`)
+        txtarea.setAttribute('style', `white-space: nowrap; padding: 15px 10% 10% 10%;`)
     }
