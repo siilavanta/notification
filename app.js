@@ -1,4 +1,4 @@
- var themetxt = `
+var themetxt = `
                 <div style="display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
@@ -75,5 +75,22 @@
                 nighttheme()
             }
        
-        console.log('ooooo')
-  
+    var att = txtarea.getAttribute('style')
+    var isWrap = 'white-space: nowrap;'
+    var isNormal = 'white-space: normal;'
+    var isNight = 'background: rgb(29, 27, 27);'
+    var isDay = ''
+    var isNightColor = 'color: white;'
+    var isDayColor = ''
+
+    if (att === isNormal) {
+     console.log('nowrap')
+        txtarea.setAttribute('style', `white-space: normal; padding: 15px 4% 10% 4%;`)
+    }else if(att === isWrap){
+        console.log('Wrap')
+        txtarea.setAttribute('style', `white-space: nowrap; padding: 15px 4% 10% 4%;`)
+    }
+    else if(att === isWrap && isDay){
+        console.log('isDay')
+        txtarea.setAttribute('style', `white-space: nowrap; padding: 15px 4% 10% 4%;`)
+    }
