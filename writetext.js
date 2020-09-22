@@ -159,18 +159,37 @@ var meghiya = 'https://raw.githubusercontent.com/MeghiyaBhante/vol_1/master/%E0%
 var abhijnananda = 'https://raw.githubusercontent.com/AbhijnanandaBhante/vol_1/master/%E0%A6%86.txt'
 var miton = 'https://raw.githubusercontent.com/MitonShramon/vol_1/master/%E0%A6%8F.txt'
 var devasen = 'https://raw.githubusercontent.com/AnugganandaBhante/vol_1/master/%E0%A6%95.txt'
-var sukel = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_১.txt'
-var sabinoy = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_২.txt'
-var rabin = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৩.txt'
-var sarubikash = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৪.txt'
-var sumon = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৫.txt'
-var rigen = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৬.txt'
+var sukel = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%A7.txt'
+var sabinoy = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%A8.txt'
+var rabin = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%A9.txt'
+var sarubikash = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AA.txt'
+var sumon = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AB.txt'
+var rigen = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AC.txt'
 var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1/master/%E0%A6%A8.txt'
 
 
     function rang() {
           document.getElementById('loadermain').style.display = "flex"
-        var index = [shraddhamitra, silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, sukel, sabinoy, rabin, sarubikash, sumon, rigen, samadhikalyan];
+        var index = [
+        shraddhamitra,
+        silavanta,
+        sarbananda,
+        shuvaananda,
+        anuggaananda,
+        shilojyoti,
+        sadhonajyoti,
+        abhijnananda,
+        meghiya,
+        miton,
+        devasen,
+        sukel,
+        sabinoy,
+        rabin,
+        sarubikash,
+        sumon,
+        rigen,
+        samadhikalyan
+      ];
         var indexName = [['শ্রদ্ধামিত্র ভিক্ষু'], 
         ['সীলৰন্ত ভিক্ষু'], 
         ['সর্বানন্দ ভিক্ষু'], 
