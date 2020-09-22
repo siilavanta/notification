@@ -1,3 +1,4 @@
+
 // var eddit_head = document.getElementById('eddit_head')
 // var div = document.createElement('span')
 // div.setAttribute('onclick', `addValue('text'), autoFocus()`)
@@ -158,19 +159,37 @@ var meghiya = 'https://raw.githubusercontent.com/MeghiyaBhante/vol_1/master/%E0%
 var abhijnananda = 'https://raw.githubusercontent.com/AbhijnanandaBhante/vol_1/master/%E0%A6%86.txt'
 var miton = 'https://raw.githubusercontent.com/MitonShramon/vol_1/master/%E0%A6%8F.txt'
 var devasen = 'https://raw.githubusercontent.com/AnugganandaBhante/vol_1/master/%E0%A6%95.txt'
-var sukel = 'https://github.com/Upasok/vol_1/edit/master/অ_১.txt'
-var sabinoy = 'https://github.com/Upasok/vol_1/edit/master/অ_২.txt'
-var rabin = 'https://github.com/Upasok/vol_1/edit/master/অ_৩.txt'
-var sarubikash = 'https://github.com/Upasok/vol_1/edit/master/অ_৪.txt'
-var sumon = 'https://github.com/Upasok/vol_1/edit/master/অ_৫.txt'
-var rigen = 'https://github.com/Upasok/vol_1/edit/master/অ_৬.txt'
+var sukel = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_১.txt'
+var sabinoy = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_২.txt'
+var rabin = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৩.txt'
+var sarubikash = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৪.txt'
+var sumon = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৫.txt'
+var rigen = 'https://raw.githubusercontent.com/Upasok/vol_1/masterঅ_৬.txt'
 var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1/master/%E0%A6%A8.txt'
 
 
     function rang() {
           document.getElementById('loadermain').style.display = "flex"
         var index = [shraddhamitra, silavanta, sarbananda, shuvaananda, anuggaananda, shilojyoti, sadhonajyoti, abhijnananda, meghiya, miton, devasen, sukel, sabinoy, rabin, sarubikash, sumon, rigen, samadhikalyan];
-        var indexName = [['শ্রদ্ধামিত্র ভিক্ষু'], ['সীলৰন্ত ভিক্ষু'], ['সর্বানন্দ ভিক্ষু'], ['শুভনন্দ ভিক্ষু'], ['অনুজ্ঞানন্দ ভিক্ষু'], ['শীলজ্যোতি ভিক্ষু'], ['সাধনাজ্যোতি ভিক্ষু'], ['অভিজ্ঞানন্দ ভিক্ষু'], ['মেঘিয়ো ভিক্ষু'], ['মিটন শ্রামণ'], ['দেবসেন ভিক্ষু'], ['সুকেল চাকমা'], ['সবিনয় চাকমা'], ['রবিন চাকমা'], ['চারু বিকাশ চাকমা'], ['সুমন চাকমা'], ['রিগেন চাকমা'], ['সমাধিকল্যাণ ভিক্ষু']];
+        var indexName = [['শ্রদ্ধামিত্র ভিক্ষু'], 
+        ['সীলৰন্ত ভিক্ষু'], 
+        ['সর্বানন্দ ভিক্ষু'], 
+        ['শুভনন্দ ভিক্ষু'], 
+        ['অনুজ্ঞানন্দ ভিক্ষু'], 
+        ['শীলজ্যোতি ভিক্ষু'], 
+        ['সাধনাজ্যোতি ভিক্ষু'], 
+        ['অভিজ্ঞানন্দ ভিক্ষু'], 
+        ['মেঘিয়ো ভিক্ষু'], 
+        ['মিটন শ্রামণ'], 
+        ['দেবসেন ভিক্ষু'], 
+        ['সুকেল চাকমা'], 
+        ['সবিনয় চাকমা'], 
+        ['রবিন চাকমা'], 
+        ['চারু বিকাশ চাকমা'], 
+        ['সুমন চাকমা'], 
+        ['রিগেন চাকমা'], 
+        ['সমাধিকল্যাণ ভিক্ষু']
+        ];
 
         var request = new XMLHttpRequest();
         (function loop(i, length) {
