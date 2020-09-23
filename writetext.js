@@ -129,6 +129,58 @@ var stylebar = `
 #mcbtn{
 align-self: center;
 }
+#header{
+    display: flex;
+    flex-direction: row;
+   
+    padding: 0px 10px;
+    background: aliceblue;
+}
+.nameHead{
+    width: 130px;
+    text-align: left;
+    padding-left:20px;
+}
+.rankHead{
+    width: 80px;
+    text-align: left;
+    
+}
+.userName{
+    display: flex;
+    flex-direction: row;
+    float : left;
+    justify-content:start;
+    padding: 0px 10px;
+    background: ;
+}
+.userName .name {
+    width: 150px;
+    text-align: left;
+    padding-left:10px;
+}
+.letter{
+    width: 80px;
+    text-align: left;
+}
+.txt{
+    position: fixed;
+    background: aliceblue;
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+    top: 0px;
+}
+#close{
+    background: cornflowerblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+#pretxt{
+margin : 50px 5px 100px 5px;
+}
 
 </style>
 `
@@ -169,7 +221,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
 
     function rang() {
-          document.getElementById('loadermain').style.display = "flex"
+        document.getElementById('loadermain').style.display = "flex"
         var index = [
         shraddhamitra,
         silavanta,
@@ -190,7 +242,8 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
         rigen,
         samadhikalyan
       ];
-        var indexName = [['শ্রদ্ধামিত্র ভিক্ষু'], 
+        var indexName = [
+        ['শ্রদ্ধামিত্র ভিক্ষু'], 
         ['সীলৰন্ত ভিক্ষু'], 
         ['সর্বানন্দ ভিক্ষু'], 
         ['শুভনন্দ ভিক্ষু'], 
@@ -224,7 +277,10 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                     var singleuser = indexName[i].concat(data.length)
 
                     
-                    document.body.insertAdjacentHTML('beforebegin', `<div style="display: none;" class="nameid">${indexName[i]} </div> <div style="display: none;" class="char_num"> ${data.length}</div>`)
+                    document.body.insertAdjacentHTML('beforebegin', `
+                    <div style="display: none;" class="nameid">${indexName[i]} </div> 
+                    <div style="display: none;" class="txtid"><div>${data}</div> 
+                    <div style="display: none;" class="char_num">${data.length}</div>`)
                    
                    
                     if (indexName[i].toString() === 'সমাধিকল্যাণ ভিক্ষু') {
@@ -239,7 +295,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                                             color: white;
                                             padding: 5px;
                                             font-weight: bold;">
-                                            র‌্যাঙ্কিংয়ে আছেন</div> `)
+                                            র‌্যাঙ্কিংয়ের ফলাফল</div> `)
                     document.getElementById('login').style.cssText = `
                                                         position: fixed;
                                                         bottom: 0px;
@@ -272,17 +328,19 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
     const topTen = () => {
 
             var nameId = document.querySelectorAll('.nameid')
+            var txtId = document.querySelectorAll('.txtid')
             var char_num = document.querySelectorAll('.char_num')
             var arr = []
             var output = []
+            var txtall = []
             for (var i = 0; i < nameId.length; i++) {
 
-                arr.push([char_num[i].textContent, `${nameId[i].textContent}`])
+                arr.push([char_num[i].textContent, nameId[i].textContent, txtId[i].textContent])
 
                 var totalChar = Number(arr[i][0])
                 arr[i].splice(0, 1, totalChar)
             }
-
+            console.log(arr)
             arr.sort(sortFunction);
 
             function sortFunction(a, b) {
@@ -293,20 +351,45 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                     return (a[0] > b[0]) ? -1 : 1;
                 }
             }
+
             for(var i = 0; i < arr.length; i++){
                 output.push(`
-                    <div style="
-                            font-family: Adorsholipi;
-                            
-                            
-                            padding: 3px;">
-                        
-                        <div> ${i +1} : <b>${arr[i][1]} </b> <span> লিখেছেন ${arr[i][0]} টি অক্ষর।</span> </div> 
-                        
+                    <div class="userName" id=user${i}>
+                        <div> ${i +1} </div> <div class="name"> ${arr[i][1]} </div> 
+                        <div class="letter">${arr[i][0]}</div> 
+                        <div onclick="data('txt${i+1}')">দেখুন</div>
+                      
                     </div>`)
             }
-            document.getElementById('loadermain').style.display = "none"
-            document.body.insertAdjacentHTML('afterbegin', output.join(' '))
-            document.body.insertAdjacentHTML('afterbegin', '<p style="color: white; background: gray; padding: 2px 6px; font-size:12px; margin: 0px 0px 10px 0px; text-align: center;"><i>কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</i></p> ')
+            for(var i = 0; i < arr.length; i++){
+                txtall.push(`<div style="display: none;" class="txt" id="txt${i + 1}"> <div id="close" onclick="closetxt('txt${i + 1}')">close</div><pre id="pretxt"> ${arr[i][2]}</pre></div>`)
+            }
+
             
+            document.getElementById('loadermain').style.display = "none"
+            document.body.insertAdjacentHTML('afterbegin', `<div id="rankdiv"><div></div></div>`)
+            setTimeout(()=>{
+                var rankdiv = document.getElementById('rankdiv')
+                   
+            },10)
+           
+            rankdiv.innerHTML = output.join(' ')
+            var user0 = document.getElementById('user0')
+            user0.insertAdjacentHTML('beforebegin', `<section id="header"><span>টপ</span> <span class="nameHead">নাম</span> <span class="rankHead">অক্ষর</span> <span>লেখা</span> </section>`)
+            
+
+            document.body.insertAdjacentHTML('afterbegin', '<p style="color: white; background: gray; padding: 2px 6px; font-size:12px; margin: 0px 0px 10px 0px; text-align: center;"><i>কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</i></p> ')
+            document.body.insertAdjacentHTML('afterbegin', txtall.join(''))
+            
+            //console.log(output)
         }
+function data(id){
+    document.getElementById(`${id}`).style.display = 'block'
+
+}
+
+
+function closetxt(idtxt){
+    document.getElementById(`${idtxt}`).style.display = 'none'
+
+}
