@@ -1,4 +1,5 @@
 
+
 // var eddit_head = document.getElementById('eddit_head')
 // var div = document.createElement('span')
 // div.setAttribute('onclick', `addValue('text'), autoFocus()`)
@@ -129,40 +130,22 @@ var stylebar = `
 #mcbtn{
 align-self: center;
 }
-#header{
-    display: flex;
-    flex-direction: row;
-   
-    padding: 0px 10px;
-    background: aliceblue;
+
+table {
+font-family: Adorsholipi;
+  border-collapse: collapse;
+  width: 100%;
 }
-.nameHead{
-    width: 130px;
-    text-align: left;
-    padding-left:20px;
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
 }
-.rankHead{
-    width: 80px;
-    text-align: left;
-    
+tr:nth-child(even) {
+  background-color: #f5f4f4;
 }
-.userName{
-    display: flex;
-    flex-direction: row;
-    float : left;
-    justify-content:start;
-    padding: 0px 10px;
-    background: ;
-}
-.userName .name {
-    width: 150px;
-    text-align: left;
-    padding-left:10px;
-}
-.letter{
-    width: 80px;
-    text-align: left;
-}
+
 .txt{
     position: fixed;
     background: aliceblue;
@@ -181,7 +164,6 @@ align-self: center;
 #pretxt{
 margin : 50px 5px 100px 5px;
 }
-
 </style>
 `
 
@@ -354,12 +336,13 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
             for(var i = 0; i < arr.length; i++){
                 output.push(`
-                    <div class="userName" id=user${i}>
-                        <div> ${i +1} </div> <div class="name"> ${arr[i][1]} </div> 
-                        <div class="letter">${arr[i][0]}</div> 
-                        <div onclick="data('txt${i+1}')">দেখুন</div>
+                    <tr class="userName" id=user${i}>
+                        <td> ${i +1}. </td> 
+                        <td class="name"> ${arr[i][1]} </td> 
+                        <td class="letter">${arr[i][0]}</td> 
+                        <td onclick="data('txt${i+1}')">দেখুন</td>
                       
-                    </div>`)
+                    </tr>`)
             }
             for(var i = 0; i < arr.length; i++){
                 txtall.push(`<div style="display: none;" class="txt" id="txt${i + 1}"> <div id="close" onclick="closetxt('txt${i + 1}')">close</div><pre id="pretxt"> ${arr[i][2]}</pre></div>`)
@@ -367,7 +350,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
             
             document.getElementById('loadermain').style.display = "none"
-            document.body.insertAdjacentHTML('afterbegin', `<div id="rankdiv"><div></div></div>`)
+            document.body.insertAdjacentHTML('afterbegin', `<table id="rankdiv"></table>`)
             setTimeout(()=>{
                 var rankdiv = document.getElementById('rankdiv')
                    
@@ -375,7 +358,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
            
             rankdiv.innerHTML = output.join(' ')
             var user0 = document.getElementById('user0')
-            user0.insertAdjacentHTML('beforebegin', `<section id="header"><span>টপ</span> <span class="nameHead">নাম</span> <span class="rankHead">অক্ষর</span> <span>লেখা</span> </section>`)
+            user0.insertAdjacentHTML('beforebegin', `<tr id="header"><th>টপ</th> <th class="nameHead">নাম</th> <th class="rankHead">অক্ষর</th> <th>লেখা</th> </tr>`)
             
 
             document.body.insertAdjacentHTML('afterbegin', '<p style="color: white; background: gray; padding: 2px 6px; font-size:12px; margin: 0px 0px 10px 0px; text-align: center;"><i>কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</i></p> ')
