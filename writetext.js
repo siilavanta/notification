@@ -1,3 +1,5 @@
+// // top ten
+
 
 
 // var eddit_head = document.getElementById('eddit_head')
@@ -160,9 +162,11 @@ tr:nth-child(even) {
     position: fixed;
     width: 100%;
     color: white;
+    font-family: Adorsholipi;
 }
 #pretxt{
 margin : 50px 5px 100px 5px;
+font-family: Adorsholipi;
 }
 </style>
 `
@@ -345,7 +349,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                     </tr>`)
             }
             for(var i = 0; i < arr.length; i++){
-                txtall.push(`<div style="display: none;" class="txt" id="txt${i + 1}"> <div id="close" onclick="closetxt('txt${i + 1}')">close</div><pre id="pretxt"> ${arr[i][2]}</pre></div>`)
+                txtall.push(`<div style="display: none;" class="txt" id="txt${i + 1}"> <div id="close" onclick="closetxt('txt${i + 1}')">দেখা বন্ধ করুন</div><pre id="pretxt"> ${arr[i][2]}</pre></div>`)
             }
 
             
