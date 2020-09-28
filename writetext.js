@@ -1,4 +1,4 @@
-// // top ten
+       // // top ten
 
 
 
@@ -378,7 +378,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
                     <tr class="userName" id=user${i}>
                         <td> ${i +1}. </td> 
                         <td class="name"> ${arr[i][1]} </td> 
-                        <td class="letter">${arr[i][0]}</td> 
+                        <td id="num" class="letter">${arr[i][0]}</td> 
                         <td onclick="data('txt${i+1}')">দেখুন</td>
                       
                     </tr>`)
@@ -403,7 +403,16 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
             document.body.insertAdjacentHTML('afterbegin', '<p style="color: white; background: gray; padding: 2px 6px; font-size:12px; margin: 0px 0px 10px 0px; text-align: center;"><i>কেবল আনলাইনে জমা দেওয়া ডাটা নিয়ে র‌্যাঙ্কিং করা হয়েছে।</i></p> ')
             document.body.insertAdjacentHTML('afterbegin', txtall.join(''))
             
-            //console.log(output)
+            var abhi = window.localStorage.getItem('abhi')
+            var abhitxt = window.localStorage.getItem('abhitxt')
+            var newnum = Number(abhi)
+            var num = document.querySelectorAll('#num')
+            var name = document.querySelectorAll('#pretxt')
+            var oldnum = Number(num[0].textContent)
+            var totalnum = newnum + oldnum
+            num[0].innerHTML = totalnum
+            name[0].append(abhitxt)
+            console.log(abhitxt)
         }
 function data(id){
     document.getElementById(`${id}`).style.display = 'block'
@@ -414,4 +423,31 @@ function data(id){
 function closetxt(idtxt){
     document.getElementById(`${idtxt}`).style.display = 'none'
 
+}
+
+if(navigator.onLine){
+    var abhijnananda_ex = 'https://raw.githubusercontent.com/AbhijnanandaBhante/vol_1/master/%E0%A6%A4.txt'
+   readExtra(abhijnananda_ex)
+    
+}else{
+
+}
+
+function readExtra(file){
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, true);
+    
+    rawFile.onreadystatechange = function (){
+        if(rawFile.readyState === 4){
+            if(rawFile.status === 200 || rawFile.status == 0){
+                var allText = rawFile.responseText;
+               window.localStorage.setItem('abhi', allText.length)
+               window.localStorage.setItem('abhitxt', allText)
+
+              //  console.log(allText.length)
+                
+            }
+        }
+    }
+    rawFile.send(null);
 }
