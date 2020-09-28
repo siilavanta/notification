@@ -280,7 +280,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
         ['চারু বিকাশ চাকমা'], 
         ['সুমন চাকমা'], 
         ['রিগেন চাকমা'], 
-        ['তুহিন চাকমা']
+        ['তুহিন চাকমা'],
         ['সমাধিকল্যাণ ভিক্ষু']
         ];
 
