@@ -235,6 +235,7 @@ var rabin = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0
 var sarubikash = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AA.txt'
 var sumon = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AB.txt'
 var rigen = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AC.txt'
+var tuhin = 'https://raw.githubusercontent.com/Upasok/vol_1/master/%E0%A6%85_%E0%A7%AD.txt'
 var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1/master/%E0%A6%A8.txt'
 
 
@@ -258,6 +259,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
         sarubikash,
         sumon,
         rigen,
+        tuhin,
         samadhikalyan
       ];
         var indexName = [
@@ -278,6 +280,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
         ['চারু বিকাশ চাকমা'], 
         ['সুমন চাকমা'], 
         ['রিগেন চাকমা'], 
+        ['তুহিন চাকমা']
         ['সমাধিকল্যাণ ভিক্ষু']
         ];
 
