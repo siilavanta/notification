@@ -193,7 +193,7 @@ font-family: Adorsholipi;
     text-indent: 30px;
 }
 .right{
-    position: absolute; 
+   
     right: 10px;
     text-align: right;
     padding: 5px;
