@@ -4,4 +4,6 @@ var head = `<head>
     <title>Ani dim</title>
     <link rel="stylesheet" href="style.css">
 </head>`;
+<h2>bh xb sx hsx </h2>
 document.head.insertAdjacentHTML('afterbegin', head);
+
