@@ -4,4 +4,4 @@ var head = `<head>
     <title>Ani dim</title>
     <link rel="stylesheet" href="style.css">
 </head>`
-document.body.append(head)
+  document.body.insertAdjacentHTML('afterbegin', head)
