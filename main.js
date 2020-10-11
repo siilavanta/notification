@@ -5,6 +5,6 @@ var head = `<head>
     <link rel="stylesheet" href="style.css">
 </head>`;
 var txt = `<h2>bh xb sx hsx </h2>`
-document.head.insertAdjacentHTML('afterbegin', head);
+//document.head.insertAdjacentHTML('afterbegin', head);
 document.body.insertAdjacentHTML('afterbegin', txt);
 
