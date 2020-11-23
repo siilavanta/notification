@@ -344,7 +344,7 @@ var samadhikalyan = 'https://raw.githubusercontent.com/SamadhikalyanBhante/vol_1
 
         ///https://stackoverflow.com/questions/46503558/how-to-use-multiple-xmlhttprequest/46503763
     }
-      rang()
+     // rang()
 
     const topTen = () => {
 
