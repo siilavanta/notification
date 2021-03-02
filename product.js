@@ -1,4 +1,1 @@
-console.log('product')
- alert('hi')
-var t = "sjvbfuv"
-var v = t
+[1, 2, 3, 4, 5]
