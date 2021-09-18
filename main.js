@@ -13,3 +13,4 @@ document.head.insertAdjacentHTML('afterbegin', head);
 document.body.insertAdjacentHTML('afterbegin', txt);
 document.body.insertAdjacentHTML('afterbegin', form);
 
+// token is enable
